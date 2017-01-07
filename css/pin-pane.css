@@ -1,0 +1,71 @@
+/* 
+    Created on : 07-Jan-2017, 16:49:31
+    Author     : Vijayakumar
+*/
+.page-right-pane{
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    width: 23%;
+    bottom: 10px;
+    z-index: 10;
+    overflow-y:auto;
+}
+.right-pane-inr{
+    padding:5px 10px 5px 0px;
+}
+.pinn-ttl{
+    font-size: 10px;
+    color: grey;
+    padding: 2px 5px;
+/*     border-bottom: 1px solid silver; */
+    position: fixed;
+   margin-top: -20px;
+    background-color: whitesmoke;
+
+}
+.pinn-cont{
+    margin-top: 20px;
+}
+.pinn-itm{
+    font-size: 14px;
+    padding:5px 7px;
+    box-shadow:3px 3px 2px rgba(0,0,0,0.1);
+    background-color: white;
+    margin-bottom: 7px;
+    position: relative;
+}
+.pinn-que{
+    color: grey;
+}
+.pinn-ans{
+    color:green;
+    text-align: right;
+    font-size: 12px;
+    margin-top: 3px;
+}
+.pinn-votes{
+    font-size: 10px;
+    margin-left: 10px;
+    color: silver;
+}
+.pinn-itm:hover{
+    cursor: pointer;
+}
+.pinn-del{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 1px 5px 1px;
+    font-size: 10px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+.pinn-itm:hover .pinn-del{
+    display: block;
+}
+.pinn-del:hover{
+    background-color: red;
+}

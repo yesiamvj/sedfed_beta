@@ -1,0 +1,45 @@
+/* 
+    Created on : 07-Jan-2017, 15:53:57
+    Author     : Vijayakumar
+*/
+.page-ttlbar-holdr{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+.page-ttlbar-inr{
+    background-color:silver;
+    padding: 7px;
+}
+.page-ttlbar-inr div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inp-txt.tttsearch{
+    padding: 4px 12px;
+    width: 325px;
+    border:1px solid silver;
+    border-radius: 2px 0px 0px 2px;
+    font-family: segoe ui;
+    font-size: 14px;
+}
+.btn-ttl-srch{
+    float: right;
+    padding: 3px 10px 5px;
+    font-size: 14px;
+    color: white;
+    background-color: darkgray;
+    border: 1px solid darkgray;
+}
+.btn-ttl-srch:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-color: grey;
+}
+.ttl-logo-holdr{
+    color: grey;
+    margin:0px 30px 0px 30px;
+   font-family:cursive;
+}
