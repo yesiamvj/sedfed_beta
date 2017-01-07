@@ -33,7 +33,7 @@ body{
     margin-bottom: 5px;
 }
 .poll-queTxt{
-    font-size: 25px;
+    font-size: 24px;
 }
 .poll-ansHoldr{
     padding: 10px 10px 5px 10px;
@@ -180,6 +180,7 @@ body{
     color: darkcyan;
     font-size: 14px;
     margin-top: 7px;
+    margin-right: 20px;
 }
 .poll-tot-votes:hover{
     color: blue;
@@ -487,4 +488,120 @@ body{
 }
 .img_4_unslcd:hover{
     opacity: 0.5;
+}
+.POLL_RATE .poll-ansItm{
+    display: inline-block;
+   height: unset;
+    width:unset;
+    padding: 0px;
+    margin: 5px;
+/*     background-color: whitesmoke; */
+}
+.POLL_RATE .poll-ansItm:hover{
+    box-shadow: 0px 0px 0px;
+}
+.POLL_RATE .poll-ans-txt{
+    font-size: 40px;
+    color: silver;
+}
+.POLL_RATE .poll-ans-stsHoldr{
+    position: relative;
+    margin: 0px;
+    float: none;
+    display: block;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.POLL_RATE .poll-ans-sts-perc{
+    font-size: 14px;
+}
+.POLL_RATE .poll-ansItm-inr{
+    display: inline-block;
+}
+.POLL_RATE .poll-ans-cover-pic{
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto 100% ;
+    width: inherit;
+    margin-bottom: -7px;
+    
+}
+.POLL_RATE .poll-ansHoldr{
+    background-color: white;
+    margin-top:0px;
+    overflow: hidden;
+   border:none;
+}
+
+.poll-action-holdr{
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    right: 10px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    background-color: white;
+    
+}
+.img-rate-poll{
+   max-height: 225px;
+}
+.POLL_RATE .poll-ans-stsItm{
+    display: block;
+    text-align: center;
+}
+.POLL_RATE .poll-ansHoldr{
+    height: 325px;
+}
+.POLL_RATE .poll-act-rate-sts{
+    margin-right: 25px;
+    font-size: 16px;
+}
+span.tip_txt{
+    font-size: 10px;
+    margin-right: 10px;
+    color: silver;
+}
+.PCPP_NO_CAP .poll-queHoldr{
+    display: none;
+}
+.PCPP_NO_CAP .poll-ans-cover-pic .img-rate-poll{
+    max-height: 300px;
+}
+.PCPP_NO_CAP .poll-ansHoldr{
+    padding-top: 0px;
+    height: 440px;
+}
+.PCPP_NO_CAP video{
+    max-height: 300px;
+}
+.POLL_RATE audio{
+    width: 90%;
+    margin-bottom: 15px;
+}
+.ARP_Audio_Holder{
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.ARP_Audio_ttl{
+    color: grey;
+    padding: 10px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.POLL_RATE .poll-ans-sts-num{
+   
+    font-size: 10px;
+}
+.POLL_AUDIO .poll-ansHoldr{
+    height: 300px;
+}
+.poll-has-media .poll-queTxt{
+    font-size: 20px;
+}
+.poll-has-mul-choice .poll-queTxt{
+    font-size: 20px;
 }
