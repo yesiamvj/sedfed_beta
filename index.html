@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/poll-itm.css"/>
         <link rel="stylesheet" href="css/titlebar.css"/>
         <link rel="stylesheet" href="css/pin-pane.css"/>
+        <link rel="stylesheet" href="css/new-poll.css"/>
         
         <script src="js/jquery.min.js"></script>
         <script src="js/poll-itm.js"></script>
@@ -16,8 +17,8 @@
         <div class="page_parent">
             <div class="page-ttlbar-holdr">
                 <div class="page-ttlbar-inr">
-                    <div class="ttl-logo-holdr">
-                        Poll Time
+                    <div class="ttl-logo-holdr" style="background-image: url(icons/icon_76.png)">
+                        
                     </div>
                     <div class="ttl-srch-holdr">
                         <input class="inp-txt tttsearch" type="text" placeholder="Search Topics , Pages ... "/>
@@ -25,8 +26,73 @@
                             <i class="fa fa-search"></i>
                         </div>
                     </div>
+                    <div class="ttl-new-post-holdr">
+                        <div class="ttl-new-post-txt">
+                            <i class="fa fa-plus"></i> Create New Poll
+                        </div>
+                    </div>
+                     <div class="ttl-cmnt-holdr ttl-notif-com ttl-notif-explo">
+                        
+                        <div class="ttl-cmnt-ico">
+                            <i class="fa fa-compass"></i> Explore
+                        </div>
+                    </div>
+                    <div class="ttl-notif-holdr ttl-notif-com">
+                        <div class="ttl-notif-count">
+                            2
+                        </div>
+                        <div class="tll-notif-ico">
+                            <i class="fa fa-bell-o"></i>
+                        </div>
+                    </div>
+                    <div class="ttl-cmnt-holdr ttl-notif-com">
+                        <div class="ttl-notif-count">
+                            5
+                        </div>
+                        <div class="ttl-cmnt-ico">
+                            <i class="fa fa-comments-o"></i>
+                        </div>
+                    </div>
+                   
+                    <div class="ttl-prof-holdr" onclick="$('#profileDropDown').slideToggle()">
+                        <div class="ttl-prof-pic" style="background-image: url(icons/vijay.jpg)">
+                            
+                        </div>
+                        <div class="ttl-prof-name">
+                            Profile Name <i class="fa fa-angle-down"></i>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
+            <div class="ttl-prof-dropHoldr" id="profileDropDown">
+                            <div class="ttl-prof-dropInr">
+                                <div class="ttl-prof-itm">
+                                    <i class="fa fa-male"></i>   Profile
+                                </div>
+                                <div class="ttl-prof-itm">
+                                    <i class="fa fa-plus"></i>   Create New Page
+                                </div>
+                                <div class="ttl-prof-itm">
+                                    <i class="fa fa-plus-square"></i>   Create New Group
+                                </div>
+                                <div class="ttl-prof-vert-sep"></div>
+                                <div class="ttl-prof-drop-sep"></div>
+                                <div class="ttl-prof-vert-sep"></div>
+                                <div class="ttl-prof-itm">
+                                    <i class="fa fa-feed"></i> My Pages
+                                </div>
+                                <div class="ttl-prof-itm">
+                                    <i class="fa fa-group"></i> My Groups
+                                </div>
+                                <div class="ttl-prof-itm">
+                                    <i class="fa fa-gear"></i> Settings
+                                </div>
+                                <div class="ttl-prof-itm">
+                                    <i class="fa fa-power-off"></i> Logout
+                                </div>
+                            </div>
+                        </div>
             <div class="page-right-pane">
                 <div class="right-pane-inr">
                     <div class="right-pane-trend-holdr" style="display: none">
@@ -2486,6 +2552,67 @@
                   
                 </div>
                 
+            </div>
+        </div>
+        <div class="fullscr-window-outer">
+            
+            <div class="fullscr-window-inr">
+                <div class="FSW_ttl">
+                    Create New Poll 
+                </div>
+                <div class="FSW_Cont">
+                    <div class="FSW_Cont_Itm">
+                        <div class="FSWCI_Que">Select Type of Poll</div>
+                        
+                    </div>
+                    <div class="FSW_Cont_Ans">
+                        <div class="CNP_typeItm">
+                            <div class="CNP_typeInr">
+                                <div class="CNPTI_Ico">
+                                    <div class="CNPTI_CO slctd"> <i class="fa fa-check"></i> </div>
+                                    <div class="CNPTI_CO"><i class="fa fa-times"></i></div>
+                                </div>
+                                <div class="CNPTI_Lbl">Choose Best One</div>
+                                <div class="CNPTI_Tip">
+                                    Text / Image
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CNP_typeItm">
+                            <div class="CNP_typeInr">
+                                <div class="CNPTI_Ico">
+                                    <div class="CNPTI_PR slctd">1</div>
+                                    <div class="CNPTI_PR slctd">2</div>
+                                    <div class="CNPTI_PR slctd">3</div>
+                                    <div class="CNPTI_PR slctd">4</div>
+                                </div>
+                                <div class="CNPTI_Lbl">Select Priority</div>
+                                <div class="CNPTI_Tip">
+                                    Text
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CNP_typeItm">
+                            <div class="CNP_typeInr">
+                                <div class="CNPTI_Ico">
+                                    <div class="CNPTI_RateImg">
+                                        <i class="fa fa-image"></i>
+                                        <i class="fa fa-film"></i>
+                                        <i class="fa fa-music"></i>
+                                    </div>
+                                    <div class="CNPTI_Stars">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i>
+                                    </div>
+                                </div>
+                                <div class="CNPTI_Lbl">Rating</div>
+                                <div class="CNPTI_Tip">
+                                    Image / Video / Audio 
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </body>

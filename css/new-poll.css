@@ -1,0 +1,92 @@
+/* 
+    Created on : 08-Jan-2017, 18:28:50
+    Author     : Vijayakumar
+*/
+.fullscr-window-outer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 200;
+    text-align: center;
+}
+.fullscr-window-inr{
+    display: inline-block;
+   
+    background-color: white;
+    text-align: left;
+    margin-top:25px;
+    border-radius: 1px;
+}
+.FSW_ttl{
+    font-size: 20px;
+    margin: 10px 20px 5px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid silver;
+/*     color:grey; */
+}
+.FSW_Cont{
+    padding:5px 25px;
+}
+.FSW_Cont_Ans{
+    text-align: center;
+}
+.CNP_typeItm{
+    display: inline-block;
+    background-color: whitesmoke;
+    height: inherit;
+    vertical-align: middle;
+    padding:20px 10px;
+   margin: 10px 10px;
+    border: 1px solid transparent;
+}
+.CNPTI_CO{
+    display: inline-block;
+    background-color: silver;
+    color: white;
+    padding: 30px 35px;
+    font-size: 25px;
+}
+.CNPTI_PR{
+    width: 125px;
+    text-align: left;
+    padding:0px 10px;
+    margin: 1px 0px;
+    color: white;
+    background-color: silver;
+}
+.CNPTI_Tip{
+    color: grey;
+    font-size: 10px;
+    margin-top: 5px;
+}
+.CNPTI_Lbl{
+    margin-top: 10px;
+}
+.CNPTI_RateImg{
+    padding: 20px;
+    background-color: silver;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.CNPTI_RateImg i{
+    margin-left: 15px;
+}
+.CNPTI_Stars{
+    color: grey;
+}
+.FSWCI_Que{
+    color: grey;
+}
+.FSW_Cont_Ans{
+    padding:25px 20px;
+}
+.CNP_typeItm:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    //border: 1px solid silver;
+}
