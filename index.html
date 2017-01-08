@@ -148,9 +148,22 @@
                             </div>
                         </div>
                               <div class="poll-audi-left-scroll">
-                                   <div class="poll-audi-ttl">
+                                   
+                              
+                          <div class="poll-tag-holdr">
+                               <div class="poll-tag-itm poll-id-num">
+                                          ID:9898
+                                      </div>
+                              <div class="poll-tag-inr">
+                                 
+                                  <div class="poll-tag-cont cont-outer">
+                                     Please vote genuinely , Thank you !
+                                  </div>
+                              </div>
+                          </div>
+                                  <div class="poll-audi-ttl">
                                     <div class="poll-audi-ttl-txt ttltxt">
-                                        Participants
+                                        Voters
                                     </div>
                                 </div>
                               <div class="poll-audi-cont cont-outer">
@@ -165,25 +178,6 @@
                                         </div>
                                     </div>
                                 </div>
-                              
-                          <div class="poll-tag-holdr">
-                              <div class="poll-tag-inr">
-                                  <div class="poll-tag-ttl ttltxt">
-                                      Tags
-                                  </div>
-                                  <div class="poll-tag-cont cont-outer">
-                                      <div class="poll-tag-itm poll-id-num">
-                                          ID:9898
-                                      </div>
-                                      <div class="poll-tag-itm">
-                                          #tamilactor
-                                      </div>
-                                      <div class="poll-tag-itm">
-                                          #kollywood
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
                           <div class="poll-cmnt-holdr">
                               <div class="poll-cmnt-inr">
                                   <div class="poll-cmnt-ttl ttltxt">
@@ -2556,17 +2550,18 @@
         </div>
         <div class="fullscr-window-outer">
             
-            <div class="fullscr-window-inr">
+            <div class="fullscr-window-inr" id="WIN_CP_TYPES">
                 <div class="FSW_ttl">
                     Create New Poll 
                 </div>
-                <div class="FSW_Cont">
+                <div class="FSW_Cont" >
+                  
                     <div class="FSW_Cont_Itm">
                         <div class="FSWCI_Que">Select Type of Poll</div>
                         
                     </div>
                     <div class="FSW_Cont_Ans">
-                        <div class="CNP_typeItm">
+                        <div class="CNP_typeItm" onclick="slh('#WIN_CP_DETS','#WIN_CP_TYPES')">
                             <div class="CNP_typeInr">
                                 <div class="CNPTI_Ico">
                                     <div class="CNPTI_CO slctd"> <i class="fa fa-check"></i> </div>
@@ -2578,7 +2573,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="CNP_typeItm">
+                        <div class="CNP_typeItm" onclick="slh('#WIN_CP_DETS','#WIN_CP_TYPES')">
                             <div class="CNP_typeInr">
                                 <div class="CNPTI_Ico">
                                     <div class="CNPTI_PR slctd">1</div>
@@ -2592,7 +2587,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="CNP_typeItm">
+                        <div class="CNP_typeItm" onclick="slh('#WIN_CP_DETS','#WIN_CP_TYPES')">
                             <div class="CNP_typeInr">
                                 <div class="CNPTI_Ico">
                                     <div class="CNPTI_RateImg">
@@ -2613,7 +2608,167 @@
                         
                     </div>
                 </div>
+                
             </div>
+            <div class="fullscr-window-inr NEW_POLL_PREF" id="WIN_CP_DETS" style="display: none">
+                <div class="FSW_ttl" onclick="slh('#WIN_CP_DETS','#WIN_CP_TYPES')">
+                    <i class="fa fa-angle-left"></i> &nbsp;  Poll Details
+                </div>
+                <div class="FSW_Cont CNPR_WinCont">
+                    
+<!--                    <div class="FSW_Cont_Itm">
+                        <div class="FSWCI_Que">Poll Details</div>
+                        
+                    </div>-->
+                    <div class="FSW_Cont_Ans">
+                        <div class="CNP_PR_itm">
+                            <div class="CNP_PR_Que">
+                                Question / Topic <span class="CNP_PR_tip">Caption displayed in the post</span>
+                            </div>
+                            <div class="CNP_PR_Ans">
+                                <textarea maxlength="150" class="inp-txt CNP_MAIN_POLL_QUE" placeholder="What you want poll for ?"></textarea>
+                            </div>
+                        </div>
+                        <div class="CNP_PR_itm">
+                            <div class="CNP_PR_Que">
+                                Options <span class="CNP_PR_tip">Choices / Options to select ( Minimum 2 )</span>
+                            </div>
+                            <div class="CNP_PR_Ans">
+                                <div class="CNP_PR_OPT_Itm">
+                                    <input class="inp-txt CNP_PR_INP" type="text" placeholder="Option 1"/>
+                                </div>
+                                <div class="CNP_PR_OPT_Itm">
+                                    <input class="inp-txt CNP_PR_INP" type="text" placeholder="Option 2"/>
+                                </div>
+                                <div class="CNP_PR_OPT_ADD_holdr">
+                                    <div class="btn_cnp_pr_opt">
+                                       + Add Option
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CNP_PR_itm">
+                            <div class="CNP_PR_Que">
+                                Caption / Comment<span class="CNP_PR_tip">( Optional )</span>
+                            </div>
+                            <div class="CNP_PR_Ans">
+                                <input class="inp-txt CNP_PR_INP" type="text" placeholder="Say about this poll..."/>
+                            </div>
+                        </div>
+                        <div class="CNP_Win_Prcd_Holdr">
+                            <div class="btn-cnp-pr-aud"  onclick="$('#WIN_CP_DETS').hide();slh('#WIN_CP_VOTERS')">
+                                Proceed
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                </div>
+            <div class="fullscr-window-inr NEW_POLL_VOTERS" style="display: none" id="WIN_CP_VOTERS">
+                <div class="FSW_ttl" onclick="sh('#WIN_CP_VOTERS','#WIN_CP_DETS')">
+                    <i class="fa fa-angle-left"></i> &nbsp;  Voters
+                </div>
+                <div class="FSW_Cont CNPR_WinCont">
+                    
+                    <div class="FSW_Cont_Itm">
+                        <div class="FSWCI_Que">Who can vote this poll ?</div>
+                        
+                    </div>
+                    <div class="FSW_Cont_Ans">
+                        <div class="CNP_AUD_cont">
+                            <div class="CNP_AUD_Itm">
+                                <div class="cnp_aud_que">
+                                    Gender
+                                </div>
+                                <div class="cnp_aud_ans">
+                                    <span class="cnp_aud_def" id="tog_cus_aud_1" onclick="sh('#tog_cus_aud_1','#tog_cnp_aud_gendr')">
+                                     Anyone <i class="fa fa-angle-down"></i>
+                                    </span>
+                                    <span class="cnp_cus_ans" id="tog_cnp_aud_gendr">
+                                        <span class="cnp_aud_cus_itm">
+                                            <input type="checkbox"/> Male
+                                        </span> &nbsp;
+                                        <span class="cnp_aud_cus_itm">
+                                            <input type="checkbox"/> Female
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="CNP_AUD_Itm">
+                                <div class="cnp_aud_que">
+                                    Age
+                                </div>
+                                <div class="cnp_aud_ans">
+                                    <span class="cnp_aud_def" id="tog_cus_aud_2" onclick="sh('#tog_cus_aud_2','#tog_cnp_aud_age')" >
+                                     Anyone <i class="fa fa-angle-down"></i>
+                                    </span>
+                                    <span class="cnp_cus_ans"  id="tog_cnp_aud_age">
+                                        Between
+                                        <span class="cnp_aud_cus_itm">
+                                            <input class="inp-txt" type="text"/> To
+                                        </span>
+                                        <span class="cnp_aud_cus_itm">
+                                            <input class="inp-txt" type="text"/>
+                                        </span>
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="CNP_AUD_Itm">
+                                <div class="cnp_aud_que">
+                                    Country
+                                </div>
+                                <div class="cnp_aud_ans">
+                                    <span class="cnp_aud_def" id="tog_cus_aud_3" onclick="sh('#tog_cus_aud_3','#tog_cnp_aud_country')">
+                                        Anyone <i class="fa fa-angle-down"></i>
+                                    </span>
+                                    <span class="cnp_cus_ans"  id="tog_cnp_aud_country">
+                                        
+                                        <span class="cnp_aud_cus_itm">
+                                            <select>
+                                                <option>Any country</option>
+                                                <option>India</option>
+                                            </select>
+                                        </span>
+                                       
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="CNP_AUD_Itm">
+                                <div class="cnp_aud_que">
+                                    State
+                                </div>
+                                <div class="cnp_aud_ans">
+                                    <span class="cnp_aud_def" id="tog_cus_aud_4" onclick="sh('#tog_cus_aud_4','#tog_cnp_aud_stat')">
+                                     Anyone <i class="fa fa-angle-down"></i>
+                                    </span>
+                                    <span class="cnp_cus_ans"  id="tog_cnp_aud_stat">
+                                        
+                                        <span class="cnp_aud_cus_itm">
+                                            <select>
+                                                <option>Any country</option>
+                                                <option>India</option>
+                                            </select>
+                                        </span>
+                                       
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CNP_Win_Prcd_Holdr">
+                            <div class="btn-cnp-pr-aud">
+                                POST
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                </div>
+            
         </div>
     </body>
 </html>

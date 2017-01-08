@@ -22,10 +22,12 @@
 }
 .FSW_ttl{
     font-size: 20px;
-    margin: 10px 20px 5px;
-    font-weight: bold;
+    margin: 0px 0px 10px;
+    padding:5px 20px;
+/*     font-weight: bold; */
     padding-bottom: 5px;
     border-bottom: 1px solid silver;
+    background-color: whitesmoke;
 /*     color:grey; */
 }
 .FSW_Cont{
@@ -81,6 +83,7 @@
 }
 .FSWCI_Que{
     color: grey;
+   
 }
 .FSW_Cont_Ans{
     padding:25px 20px;
@@ -88,5 +91,147 @@
 .CNP_typeItm:hover{
     cursor: pointer;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-    //border: 1px solid silver;
+    /*border: 1px solid silver;*/
+}
+.FSW_PostSubTtl{
+/*     font-weight: bold; */
+    color: grey;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.CNP_PR_Que{
+    color: black;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: royalblue;
+/*     font-weight: bold; */
+}
+.CNP_PR_tip{
+    font-size: 12px;
+    color: grey;
+     margin-left: 20px;
+    font-weight: normal;
+    display: none;
+}
+.CNPR_WinCont .FSW_Cont_Ans{
+    text-align: left;
+    
+}
+.btn_cnp_pr_opt{
+    display: inline-block;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid silver;
+    padding: 2px 10px 3px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    font-size: 12px;
+}
+.btn_cnp_pr_opt:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+}
+.CNP_PR_OPT_ADD_holdr{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.CNPR_WinCont .CNP_PR_INP{
+    width: 350px;
+    padding:2px 10px;
+    font-family: segoe ui;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid silver;
+}
+.CNPR_WinCont{
+    padding: 5px 5px;
+}
+.CNP_MAIN_POLL_QUE{
+    width:350px;
+    border: none;
+    border-bottom: 2px solid silver;
+    padding: 5px 10px;
+    font-family: segoe ui;
+    font-size: 20px;
+}
+.CNP_PR_itm{
+    margin-bottom: 10px;
+}
+.CNP_PR_OPT_Itm{
+    margin-bottom: 5px;
+}
+.CNP_PR_Ans{
+    margin-left: 25px;
+    margin-top:10px;
+}
+.CNPR_WinCont .FSWCI_Que{
+    margin-left: 15px;
+}
+.CNPR_WinCont .FSW_Cont_Ans{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.NEW_POLL_PREF{
+    overflow-y: auto;
+    max-height: 90%;
+}
+.btn-cnp-pr-aud{
+    background-color: royalblue;
+    color: white;
+    font-size: 16px;
+    padding: 2px 20px 4px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.CNP_Win_Prcd_Holdr{
+    text-align: right;
+    margin-top: 20px;
+}
+.btn-cnp-pr-aud:hover{
+    cursor: pointer;
+    background-color: blue;
+    
+}
+.CNP_AUD_Itm div{
+    display: inline-block;
+}
+.CNP_AUD_cont{
+    padding: 10px 20px;
+}
+.CNP_AUD_Itm{
+    padding: 10px;
+/*     border-bottom: 1px solid silver; */
+    width: 300px;
+    margin-bottom: 10px;
+    color: grey;
+}
+.cnp_aud_que{
+    color: black;
+}
+.cnp_aud_ans:hover{
+    cursor: pointer;
+    color: black;
+     box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+}
+.cnp_aud_ans{
+    margin-left: 50px;
+    float: right;
+    
+   background-color: whitesmoke;
+    padding:5px 20px;
+    font-size: 14px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+.cnp_aud_cus_itm .inp-txt{
+    width: 30px;
+    text-align: center;
+}
+.FSW_ttl:hover{
+    cursor: pointer;
+    color: grey;
+}
+.cnp_cus_ans{
+    display: none;
 }

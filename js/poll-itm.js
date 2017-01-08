@@ -17,7 +17,14 @@ function blurLeftPane(){
         c('blueleftpane , mouse pos '+''+$('poll-main-pane').css('left'));
     }
 }
-
+function sh(id1,id2){
+    $(id1).toggle();
+    $(id2).toggle();
+}
+function slh(id1,id2){
+    $(id1).slideToggle();
+    $(id2).slideToggle();
+}
 function c(txt){
     console.log(txt);
 }
